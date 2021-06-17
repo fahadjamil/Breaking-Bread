@@ -1,0 +1,35 @@
+.actor{
+    background-color:#212529;
+    color:#dc3545;
+    padding: 20px;
+    display: none;
+
+}
+.img:hover + .actor {
+    display:inline;
+  }
+.img{
+    height:400px;
+    size: cover;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+a{
+    color: #212529;
+    text-decoration: none;
+    background-color: transparent;
+}
+.full-video {
+    background-color: #1E2129;
+    background-image: url(https://occ-0-3734-58.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXxoWTdPH3iMXTnzIk-_aIcgSKVAF3Cij7JbpftqmjzFiff2IGDsioilZru0F4TaJqwA1udYGGm2oJZC9LYcEUdewBND.jpg?r=e04);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    border-style: none;
+}

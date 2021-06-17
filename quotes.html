@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Quotes</title>
+  </head>
+
+  <body class="bg-light">
+    <!-------navbar-------->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Ninth navbar example"
+    >
+      <div class="container-xl">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./logo (2).png" style="width: 2rem" alt="Breaking Bad"
+        /></a>
+        <a class="navbar-brand" href="./index.html" style="color:#dc3545;">Breaking Bad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Charactors.html"
+                >Characters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Episodes.html"
+                >Episodes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./quotes.html"
+                >Quotes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Deaths.html"
+                >Deaths</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------data Section------------->
+    
+    <div class="col-md-12">
+      <div class="container">
+      <div class="pt-4" style="color: #dc3545; text-align: center">
+        <h2>Quotes</h2>
+        <hr>
+      </div>
+      
+          <div class="row"  id="quote">
+            
+            </div>
+
+        </div>
+      
+      
+    </div>
+    <!-------Footer------------->
+    <footer class="bg-dark bottom" style="overflow-x: hidden !important;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright  p-3" style="text-align: center; color:#fff;">
+                © Copyright <strong>Beyond Revolution</strong>. All Rights
+                Reserved
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!--------------Ajax CDN----------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $.ajax({
+        type: "GET",
+        url: "https://breakingbadapi.com/api/quotes",
+        success: function (result) {
+          console.log(result[0].quote);
+          let myData = " ";
+          let j = result.length;
+          
+          for (let i = 0; i < j; i++) {
+            myData +=
+            "<div class='col-lg-6 px-5 py-3'><div class='card'><div class='card-header' style='background-color:#dc3545'> Quote </div><div class='card-body' ><blockquote class='blockquote mb-0'><p>"+result[i].quote+"</p><footer class='blockquote-footer'>"+result[i].author+"</footer></blockquote> </div></div></div>";
+          }
+
+          document.getElementById("quote").innerHTML = myData.trim();
+          
+        },
+      });
+    </script>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

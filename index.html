@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link  href="./style.css"  rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Breaking Bad</title>
+  </head>
+
+  <body class="bg-light" style="overflow-x: hidden !important;">
+    <!-------navbar-------->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Ninth navbar example"
+    >
+      <div class="container-xl">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./logo (2).png" style="width: 2rem" alt="Breaking Bad"
+        /></a>
+        <a class="navbar-brand" href="./index.html" style="color:#dc3545;">Breaking Bad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Charactors.html"
+                >Characters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Episodes.html"
+                >Episodes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./quotes.html"
+                >Quotes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Deaths.html"
+                >Deaths</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------Slider------------->
+    <div class="container-fluid px-0 ">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide h-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner" style="height: 100vh">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://images7.alphacoders.com/617/thumb-1920-617964.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://images5.alphacoders.com/315/thumb-1920-315320.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images8.alphacoders.com/698/thumb-1920-698914.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images5.alphacoders.com/111/thumb-1920-1111276.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+   
+
+    <!------Introduction-------->
+
+
+    <section class="section categories bg-dark p-5">
+      <div class="container">
+
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="section-title mb-4">
+                      
+                      <h2 class="text-white">Breaking Bad</h2>
+                      <p class="text-white">Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes. It was set and filmed in Albuquerque, New Mexico, and tells the story of Walter White (Bryan Cranston), an underpaid, overqualified and dispirited high school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime, partnering with his former student Jesse Pinkman (Aaron Paul), by producing and distributing crystal meth to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. According to Gilligan, the title is a Southern colloquialism meaning "to raise hell"
+                      </p>
+                  </div>
+                  <a href="https://www.netflix.com/pk/title/70143836" class="btn btn-outline-danger">View All </a>
+              </div>
+              <div class="col-lg-6">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                 
+                                      <div class="category-card card text-center mb-4">
+                                          <div class="category-image">
+                                              <img src="https://images7.alphacoders.com/294/thumbbig-294072.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          
+                                      </div>
+
+                                  
+                              </div>
+                              <div class="col-lg-12">
+                                  
+                                      <div class="category-card card text-center mb-4">
+                                          <div class="category-image">
+                                              <img src="https://images7.alphacoders.com/675/thumbbig-675495.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          
+                                      </div>
+
+                                  
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                 
+                                      <div class="category-card card text-center mb-4 mt-4">
+                                          <div class="category-image">
+                                              <img src="https://images2.alphacoders.com/475/thumbbig-475635.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          
+                                      </div>
+
+                               
+                              </div>
+                              <div class="col-lg-12">
+                                 
+                                      <div class="category-card card text-center mb-4">
+                                          <div class="category-image">
+                                              <img src="https://images3.alphacoders.com/820/thumbbig-820445.jpg" class="img-fluid" alt="">
+                                          </div>
+                                         
+                                      </div>
+
+                                 
+                              </div>
+                          </div>
+
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+   <!------Charactors----------->
+
+   <div class="col-md-12">
+     
+    <div class="container">
+      <div class="pt-4" style="color:#dc3545; text-align: center">
+        <h2>BREAKING BAD CARACTORS</h2>
+        <hr />
+      </div>
+
+
+
+   
+
+    <div class="row" id="moviecard">
+
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn" type="button" style="background-color: #dc3545; ">
+        <a style="color: #212529;
+        text-decoration: none;
+        background-color: transparent;" href="./Charactors.html"> Click to see more</a>
+      </button>
+    </div>
+  
+  </div></div>
+    <!------------Episodes------------>
+    <div class="col-md-12 mt-5 bg-dark" >
+      <div class="container">
+      <div class="pt-3" style="color: #dc3545; text-align: center">
+        <h2>EPISODES</h2>
+        <hr>
+      </div>
+      
+      <div class="row py-3 px-5" id="episode">
+        
+      </div>
+      <div class="d-grid gap-2  p-5 col-6 mx-auto">
+        <button class="btn" type="button" style="background-color: #dc3545; ">
+          <a style="color: #212529;
+          text-decoration: none;
+          background-color: transparent;" href="./Charactors.html"> Click to see more</a>
+        </button>
+      </div>
+    </div></div>
+    <!-----Quotes-------->
+    <div class="col-md-12">
+      <div class="pt-4" style="color: #dc3545; text-align: center">
+        <h2>Quotes</h2>
+        <hr>
+      </div>
+      <div class="container">
+          <div class="row"  id="quote">
+            
+            </div>
+
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn" type="button" style="background-color: #dc3545; ">
+            <a style="color: #212529;
+            text-decoration: none;
+            background-color: transparent;" href="./Charactors.html"> Click to see more</a>
+          </button>
+        </div>
+      
+      
+    </div>
+
+    <!----------Deaths Detail--------------->
+    <div class="col-md-12 mt-3 pb-4" style="background-color: #E2E2E2;">
+      <div class="container p-3">
+        <div class="pt-4" style="color: #dc3545; text-align: center">
+          <h2>BREAKING BAD DEATHS DETAILS</h2>
+          <hr />
+        </div>
+      
+      <div class="row px-5" id="deaths"></div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn" type="button" style="background-color: #dc3545; ">
+          <a style="color: #212529;
+          text-decoration: none;
+          background-color: transparent;" href="./Charactors.html"> Click to see more</a>
+        </button>
+      </div>
+    </div></div>
+
+    <!----------Vedio  link------------->
+
+    <section class="full-video section">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6 p-4">
+                  <div class="full-video-content">
+                      <h2 class="text-white">Breaking Bad
+                      </h2>
+                     
+                      <h6 class="text-white my-2">2008 | 18+ | 5 Seasons | Crime TV Dramas</h6>
+                      
+                      <p class="text-white">
+                        A high school chemistry teacher dying of cancer teams with a former student to secure his family's future by manufacturing and selling crystal meth.
+                        </p>
+                      <div class="slider-button">
+                          <a href="https://www.netflix.com/pk/title/70143836" class="btn mr-3" style='background-color:#dc3545' >Watch</a>
+                          
+                      </div>
+                  </div>
+
+              </div>
+              <div class="col-lg-6 pt-4 px-6 pb-5">
+                <video width="400" controls>
+                  <source src="./El Camino_ A Breaking Bad Movie _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                  <source src="./El Camino_ A Breaking Bad Movie _ Official Trailer _ Netflix.ogg" type="video/ogg">
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-------Footer------------->
+    <footer class="bg-dark bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright p-3" style="text-align: center; color: #fff">
+              © Copyright <strong>Beyond Revolution</strong>. All Rights
+              Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--------------Ajax CDN----------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      
+      $.ajax({
+        type: "GET",
+        url: "https://breakingbadapi.com/api/characters/",
+        success: function (result) {
+          console.log(result[0].img);
+          let myData = " ";
+          let j = result.length;
+
+          for (let i = 0; i < 6; i++) {
+            myData +="<div class='col-lg-4'><div class='card mb-3 mx-3  my-4' ><img class='card-img-top img' src="+result[i].img+" alt='Card image'><div class='card-img-overlay actor'><h4 class='card-title'>"+result[i].name+"</h4><hr><span>Nickname : "+result[i].nickname+"</span><br><span>Portrayed by : "+result[i].portrayed+"</span><br><span>Status :  "+result[i].status+"</span></div></div></div>";
+          }
+
+          document.getElementById("moviecard").innerHTML = myData.trim();
+        },
+      });
+    
+
+      $.ajax({
+        type: "GET",
+        url: "https://breakingbadapi.com/api/quotes",
+        success: function (result) {
+          console.log(result[0].quote);
+          let myData = " ";
+          let j = result.length;
+
+          for (let i = 0; i < 4; i++) {
+            myData +=
+              "<div class='col-lg-6 px-5 py-3'><div class='card'><div class='card-header'  style='background-color:#dc3545'> Quote </div><div class='card-body' ><blockquote class='blockquote mb-0'><p>" +
+              result[i].quote +
+              "</p><footer class='blockquote-footer'>" +
+              result[i].author +
+              "</footer></blockquote> </div></div></div>";
+          }
+
+          document.getElementById("quote").innerHTML = myData.trim();
+        },
+      });
+      $.ajax({
+        type: "GET",
+        url: "https://breakingbadapi.com/api/deaths",
+        success: function (result) {
+          console.log(result[0].death);
+          let myData = " ";
+          let j = result.length;
+
+          for (let i = 0; i < 4; i++) {
+            myData +=
+              "<div  class='col-lg-3 my-3'><div class='card'><div class='card-header' style='background-color:#dc3545;'>" +
+              result[i].death +
+              "</div><div class='card-body'><ul class='list-group list-group-flush'><li class='list-group-item'>Responsible : " +
+              result[i].responsible +
+              "</li><li class='list-group-item'>Season : " +
+              result[i].season +
+              "</li><li class='list-group-item'>Episodes : " +
+              result[i].episode +
+              "</li><li class='list-group-item'>Number of deaths : " +
+              result[i].number_of_deaths +
+              "</li></ul></div></div></div>";
+          }
+
+          document.getElementById("deaths").innerHTML = myData.trim();
+        },
+      });
+      $.ajax({
+        type: "GET",
+        url: "https://breakingbadapi.com/api/episodes",
+        success: function (result) {
+          console.log(result[0].title);
+          let myData = " ";
+          let j = result.length;
+
+          for (let i = 0; i < 4; i++) {
+            myData +="<div  class='col-lg-3 my-3'><div class='card'><div class='card-header' style='background-color:#dc3545'>"+result[i].title+"</div><div class='card-body p-0'<ul class='list-group list-group-flush'><li class='list-group-item'>Season # "+result[i].season+"</li><li class='list-group-item'>Episode # "+ result[i].episode+"</li><li class='list-group-item'>On Air: "+result[i].air_date+"</li><li class='list-group-item'><ul class='list-group list-group-flush'><li class='list-group-item'><button class='btn px-5' type='button' style='background-color:#dc3545;' data-bs-toggle='collapse' data-bs-target='#collapseExample_"+i+"' aria-expanded='false' aria-controls='collapseExample'>Actors </button></li><li class='list-group-item'><div class='collapse' id='collapseExample_"+i+"'>"+result[i].characters.map((actor,  index) => "</p><span>"+actor+"</span><br><p class='d-none'>")+"</div></li></li></ul></div></div></div>";
+          }
+
+          document.getElementById("episode").innerHTML = myData.trim();
+        },
+      });
+    </script>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
